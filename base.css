@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Î¢ÈíÑÅºÚ";
+    list-style:none;
+}
+#list>ul{
+    right:25px;
+    top: 0;
+}
+#list>ul>li i{
+    display: block;
+    border-left: 1px solid #046ebf;
+    float: right;
+    padding-left: 15px;
+    cursor: pointer;
+}
+#list>ol{
+    right: 30px;
+    top: -42px;
+}
+#list>ol>input{
+    border:0;
+    border-bottom: 1px solid #046ebf;
+    width: 50px;
+}
+#list>ol>input:focus{
+    outline:none;
+}
+#list>ul>li>a,.navbar-dark{
+    color: #046ebf !important;
+}
+#parent>li>ul{
+    background:rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    position: absolute;
+    left: 55px;
+    top: 40px;
+    z-index: 10;
+}
+
+#parent>li>ul>li{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../img/base/nav.png") !important;
+}
+header{
+    border-bottom: 8px solid #046ebf;
+}
+aside{
+    background-image: url("../img/base/left_bg.jpg");
+    height: 644px;
+    color:#fff;
+}
+aside>div{
+    margin: 13%;
+}
+aside>div>h4{
+    width: 50%;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #fff;
+    margin-bottom: 35px;
+}
+aside>div>ul>li{
+    margin-bottom: 50px;
+}
+aside>div>ul>li>a{
+    color: #fff;
+}
+div.row>div.col-lg-8>div{
+   text-indent: 25px;
+   padding: 5% 5%;
+}
+
+footer>div{
+    background: #333;
+    padding: 0;
+    color: #ffffff;
+}
+.copy{
+    width: 100%;
+    line-height:60px;
+    height: 60px;
+    background: #046ebf
+}
+@media screen and (min-width: 577px){
+    #list>ul>li img{
+        display: none;
+    }
+    #list>ul>li{
+        margin: 10px;
+    }
+    #parent li:nth-child(3)>ul{
+        left: 152px;
+    }
+}
+/*ÊÖ»ú¶Ë*/
+@media screen and (max-width: 576px){
+    #list>ol{
+        display: none;
+    }
+    #list>ul>li{
+        border-bottom:1px solid #046ebf;
+        padding: 10px;
+    }
+    #list>ul{
+        left: 0;
+        top: 30px;
+    }
+    #parent>li>ul{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 90%;
+    }
+    #parent>li>ul>li{
+        margin-right: 20px;
+        float: left;
+        color: #046ebf;
+    }
+    .col-sm-0{
+        display: none;
+    }
+}
